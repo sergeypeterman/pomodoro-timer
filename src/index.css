@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Azeret+Mono:wght@400;600&display=swap');
+
+html, body {
+    height: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{  
+  background-color: #bbb;
+  
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#pomodoro{
+  font-family: 'Azeret Mono', monospace;
+  font-size: 1.2em;
+  box-sizing: border-box;
+  height: 100%;
+  width: 400px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  background-color: #ddd;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+
+#session{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 50%;
+
+}
+#break{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 50%;
+
+}
+#timer{
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid black;
+  margin: 0 4em 2em 4em;
+  border-radius: 5px;
+}
+
+.sect{
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.label{
+  font-weight: 600;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button{
+  height: 30px;
+  width: 30px;
+}
+
+.timer {
+  padding: 10px;
+  margin: 0;
+  
+  text-align: center;
+}
+.small{
+  width: 2em;
+}
+
+#timer button{
+  padding: 20px;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
