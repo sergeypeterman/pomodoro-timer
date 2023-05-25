@@ -17,7 +17,7 @@ console.clear();
 export default function Pomodoro() {
   const [breakP, setBreakP] = useState(BREAKP); // break period
   const [workP, setWorkP] = useState(WORKP); // work period
-  const [status, setStatus] = useState(0); // work period
+  const [status, setStatus] = useState(0); // status
   const [timespan, setTimespan] = useState(0); // deadline
 
   useEffect(() => {
